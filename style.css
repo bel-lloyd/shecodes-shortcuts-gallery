@@ -108,10 +108,10 @@ h3#example::after {
   font-weight: 700;
 }
 
-.card {
-  width: 30%;
+.card-1 {
+  /* width: 30%; */
   margin: auto 10px;
-  background: #fff;
+  background: rgb(252, 209, 252);
   border-radius: 15px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   transition: box-shadow 0.3s ease;
@@ -123,6 +123,46 @@ h3#example::after {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+}
+
+.card-2 {
+  /* width: 30%; */
+  margin: auto 10px;
+  background: rgb(251, 230, 191);
+  border-radius: 15px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 24px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e6e6e6;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.card-3 {
+  /* width: 30%; */
+  margin: auto 10px;
+  background: rgb(180, 251, 244);
+  border-radius: 15px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 24px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e6e6e6;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.card:hover {
+  transition: ease-in-out;
+  transition-duration: 1s;
+  
 }
 
 @media screen and (max-width: 480px) {
@@ -149,7 +189,6 @@ h3#example::after {
 
 .sc {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  flex-wrap: wrap;
 }
 
