@@ -109,9 +109,9 @@ h3#example::after {
 }
 
 .card-1 {
-  /* width: 30%; */
+  width: 30%;
   margin: auto 10px;
-  background: rgb(252, 209, 252);
+  background: rgb(250, 222, 250);
   border-radius: 15px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   transition: box-shadow 0.3s ease;
@@ -126,9 +126,9 @@ h3#example::after {
 }
 
 .card-2 {
-  /* width: 30%; */
+  width: 30%;
   margin: auto 10px;
-  background: rgb(251, 230, 191);
+  background: rgb(248, 236, 212);
   border-radius: 15px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   transition: box-shadow 0.3s ease;
@@ -143,9 +143,9 @@ h3#example::after {
 }
 
 .card-3 {
-  /* width: 30%; */
+  width: 30%;
   margin: auto 10px;
-  background: rgb(180, 251, 244);
+  background: rgb(201, 246, 241);
   border-radius: 15px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   transition: box-shadow 0.3s ease;
@@ -165,14 +165,24 @@ h3#example::after {
   
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   .body {
     flex-direction: column;
+    width: 100%;
   }
 
-  .card {
-    width: calc(100% - 68px)
+  .card-1 {
+    width: 95%;
   }
+
+  .card-2 {
+    width: 95%;
+  }
+
+  .card-3 {
+    width: 95%;
+  }
+
 }
 
 .cmd {
