@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lato&family=Spartan:wght@100;200;300;400;500;600&display=swap');
+
 .main-heading {
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
   margin-top: 64px;
-  position: relative
+  position: relative;
 }
 
 @media(max-width:768px) {
@@ -165,6 +167,98 @@ h3#example::after {
   
 }
 
+.cmd {
+  color: #fff;
+  padding: 0.2rem 0.4rem;
+  background-color: #000;
+  border-radius: 4px;
+  box-shadow: 0 3px 0 1px silver;
+  font-family: Arial,sans-serif;
+  font-weight: 100;
+  white-space: nowrap;
+  line-height: 1.5em;
+}
+
+.sc {
+display: flex;
+flex-wrap: wrap;
+}
+
+.back-to-top {
+position: fixed;
+bottom: 50px;
+right: 25px;
+background-color: rgb(104, 217, 255, 0.4);
+padding: 20px;
+border-radius: .75rem;
+text-transform: uppercase;
+font-family: Spartan;
+/* display: none; */
+}
+
+button {
+border-radius: 20px;
+width: calc(100%/3);
+margin: 5px;
+box-shadow: 0 5px 20px rgba(14, 14, 14, 0.2);
+transition: box-shadow 0.3s ease;
+background-color: white;
+padding: 10px;
+font-family: Lato;
+font-size: 1rem;
+text-transform: uppercase;
+color: black;
+font-weight: bold;
+background: linear-gradient(5deg, rgb(253, 137, 253), rgb(250, 222, 250));
+}
+
+#button-2 {
+  border-radius: 20px;
+  width: calc(100%/3);
+  margin: 5px;
+  box-shadow: 0 5px 20px rgba(14, 14, 14, 0.2);
+  transition: box-shadow 0.3s ease;
+  background-color: white;
+  padding: 10px;
+  font-family: Lato;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  background: linear-gradient(5deg, rgb(251, 193, 78), rgb(248, 236, 212));
+  }
+
+#button-3 {
+  border-radius: 20px;
+  width: calc(100%/3);
+  margin: 5px;
+  box-shadow: 0 5px 20px rgba(14, 14, 14, 0.2);
+  transition: box-shadow 0.5s ease;
+  background-color: white;
+  padding: 10px;
+  font-family: Lato;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  background: linear-gradient(5deg, rgb(56, 251, 228), rgb(201, 246, 241));
+  }
+
+button:hover {
+  transform: scale(1);
+  background-color: white;
+}
+
+button a {
+  color: black;
+}
+
+.top-buttons {
+display: flex;
+justify-content: space-around;
+}
+
+
 @media screen and (max-width: 650px) {
   .body {
     flex-direction: column;
@@ -183,22 +277,23 @@ h3#example::after {
     width: 95%;
   }
 
+.top-buttons {
+    width: 95%;
+  }
+
+button {
+  width: calc(100%/1)
 }
 
-.cmd {
-    color: #fff;
-    padding: 0.2rem 0.4rem;
-    background-color: #000;
-    border-radius: 4px;
-    box-shadow: 0 3px 0 1px silver;
-    font-family: Arial,sans-serif;
-    font-weight: 100;
-    white-space: nowrap;
-    line-height: 1.5em;
 }
 
-.sc {
-  display: flex;
-  flex-wrap: wrap;
-}
+@media screen and (max-width: 650px) {
+  .top-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
 
+  button {
+    width: 100%;
+  }
+}
