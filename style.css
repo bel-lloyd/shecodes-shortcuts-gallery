@@ -8,20 +8,6 @@
   position: relative;
 }
 
-@media(max-width:768px) {
-  .main-heading {
-    margin-bottom: 8px;
-    margin-top: 32px
-  }
-}
-
-@media(max-width:480px) {
-  .main-heading {
-    margin-bottom: 8px;
-    margin-top: 32px
-  }
-}
-
 .main-heading {
   margin-top: 0;
   margin-bottom: 0
@@ -36,47 +22,9 @@
   text-align: center
 }
 
-@media(min-width:480px) and (max-width:768px) {
-  .main-heading>h1 {
-    font-size: calc(40px + 6 * ((100vw - 480px)/288))
-  }
-}
-
-@media(min-width:768px) and (max-width:1280px) {
-  .main-heading>h1 {
-    font-size: calc(46px + 3 * ((100vw - 768px)/512))
-  }
-}
-
-@media(min-width:1280px) {
-  .main-heading>h1 {
-    font-size: 49px
-  }
-}
-
 .main-heading>h1>em {
   font-style: normal;
   color: #89a
-}
-
-@media(min-width:769px) {
-  .UseCompactHeader .main-heading {
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 32px
-  }
-
-  .UseCompactHeader .main-heading>h1 {
-    flex: 1 0 auto;
-    text-align: left;
-    padding-right: 32px
-  }
-
-  .UseCompactHeader .main-heading>.pubbox {
-    flex: 0 0 auto;
-    margin-top: 0;
-    margin-bottom: 0
-  }
 }
 
 .h3-section {
@@ -182,6 +130,16 @@ h3#example::after {
 .sc {
 display: flex;
 flex-wrap: wrap;
+}
+
+.span-style {
+  font-family: Lato;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.span-style a {
+  padding: 10px;
 }
 
 .back-to-top {
@@ -342,15 +300,15 @@ form {
   }
 
   .card-1 {
-    width: 95%;
+    width: 90%;
   }
 
   .card-2 {
-    width: 95%;
+    width: 90%;
   }
 
   .card-3 {
-    width: 95%;
+    width: 90%;
   }
 
 .top-buttons {
@@ -387,5 +345,57 @@ button {
 
   button {
     width: 100%;
+  }
+}
+
+@media(max-width:768px) {
+  .main-heading {
+    margin-bottom: 8px;
+    margin-top: 32px
+  }
+}
+
+@media(max-width:480px) {
+  .main-heading {
+    margin-bottom: 8px;
+    margin-top: 32px
+  }
+}
+
+@media(min-width:480px) and (max-width:768px) {
+  .main-heading>h1 {
+    font-size: calc(40px + 6 * ((100vw - 480px)/288))
+  }
+}
+
+@media(min-width:768px) and (max-width:1280px) {
+  .main-heading>h1 {
+    font-size: calc(46px + 3 * ((100vw - 768px)/512))
+  }
+}
+
+@media(min-width:1280px) {
+  .main-heading>h1 {
+    font-size: 49px
+  }
+}
+
+@media(min-width:769px) {
+  .UseCompactHeader .main-heading {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 32px
+  }
+
+  .UseCompactHeader .main-heading>h1 {
+    flex: 1 0 auto;
+    text-align: left;
+    padding-right: 32px
+  }
+
+  .UseCompactHeader .main-heading>.pubbox {
+    flex: 0 0 auto;
+    margin-top: 0;
+    margin-bottom: 0
   }
 }
